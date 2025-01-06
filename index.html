@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waw</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./helpers/animation.js" defer></script>
+    <script src="./helpers/helpers.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/index.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js" integrity="sha512-1PKqXBz2ju2JcAerHKL0ldg0PT/1vr3LghYAtc59+9xy8e19QEtaNUyt1gprouyWnpOPqNJjL4gXMRMEpHYyLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <div class="page">
+        <div class="top">
+            <h2>Free Plastine</h2>
+        </div>
+        <header>
+            <nav>
+                <div class="logo"><img src="img/image (1).png"></div>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Services</a>
+                <a href="#">News</a>
+                <div class="new">new</div>
+            </nav>
+            <div class="right-items">
+                <button class="btn">
+                    <span class="icon">
+                        <svg viewBox="0 0 175 80" width="40" height="40">
+                            <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                            <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                            <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                        </svg>
+                    </span>
+                    <span class="text">MENU</span>
+                </button>
+                <button class="btn-login">Login</button>
+            </div>
+        </header>
+
+        <div class="item-left">
+            <div class="icon-close">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="connection">
+                <div class="profile">
+                    <a href="profile.html"><img id ="img"src="img/profile.png"></a>
+                </div>
+                <input type="search" placeholder="🔍 Search">
+            </div>
+            <div class="more">
+                <div class="objects">
+                    <a class="mylinks" href="#">Product</a>
+                    <a class="mylinks" href="#">Solution</a>
+                    <a class="mylinks" href="#">Open Source</a>
+                    <a class="mylinks" href="#">Top News</a>
+                    <a class="mylinks" href="#">Settings</a>
+                    <a class="mylinks" href="#">Account</a>
+                    <a class="mylinks" href="profile.html">Profile</a>
+                    <a class="mylinks" href="#">Resource</a>
+                    <a class="mylinks" href="#">Status</a>
+                    <a class="mylinks" href="#">Help Me</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="second">
+            <div class="details">
+                <h2>What we looking for is how 
+                    <br>everything work and what
+                    <br>make everything work.
+                </h2>
+            </div>
+            <div class="input-box">
+                <input type="search" placeholder="🔍 Search">
+            </div>
+            <div class="wrapper">
+                <div class="box item1">
+                    <img src="img/slider1_1.png">
+                </div>
+                <div class="box item2">
+                    <img src="img/slider1_2.png">
+                </div>
+                <div class="box item3">
+                    <img src="img/slider1_3.png">
+                </div>
+                <div class="box item4">
+                    <img src="img/slider1_4.png">
+                </div>
+                <div class="box item5">
+                    <img src="img/slider1_5.png">
+                </div>
+                <div class="box item6">
+                    <img src="img/slider1_6.png">
+                </div>
+                <div class="box item7">
+                    <img src="img/slider1_7.png">
+                </div>
+                <div class="box item8">
+                    <img src="img/slider1_8.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="intro">
+            <div class="image">
+                <img src="img/image (2).png">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="page-one">
+        <div class="container">
+            <button class="btn-options show" id="btn-options" data-target="content1">News</button>
+            <button class="btn-options" data-target="content2">Members</button>
+            <button class="btn-options" data-target="content3">People</button>
+            <button class="btn-options" data-target="content4">Posts</button>
+            <button class="btn-options" data-target="content5">Photo</button>
+            <button class="btn-options" data-target="content6">Mentions</button>
+        </div>
+
+
+        <div class="content">
+            <div id="content1" class="content-item active">
+                <img src="img/army.jpg">
+            </div>
+            <div id="content2" class="content-item ">
+                <img src="img/army (2).jpg">
+            </div>
+            <div id="content3" class="content-item ">
+                <img src="img/png (2).png">
+            </div>
+            <div id="content4" class="content-item ">
+                <img src="img/png (1).jpg">
+            </div>
+            <div id="content5" class="content-item ">
+                <img src="img/png (2).png">
+            </div>
+            <div id="content6" class="content-item ">
+                <img src="img/png (1).jpg">
+            </div>
+        </div>
+
+        
+    </div>
+    
+</body>
+</html>

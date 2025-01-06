@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Badeen+Display&family=Bebas+Neue&family=Gloria+Hallelujah&family=Lilita+One&family=Sacramento&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    background: #ddd;
+}
+
+.wrapper .flex, .wrapper .flex-two {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex .frame {
+    width: 500px;
+    height: 550px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.frame h2 {
+    font-family: "Anton", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame .edit {
+    width: 100px;
+    height: 100px;
+    border-radius: 30rem;
+    margin: auto;
+}
+
+.frame .edit .image img {
+    width: 100%;
+}
+
+.frame .input-box {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    margin: 15px 0;
+    overflow: hidden;
+    border: 2px solid gray;
+}
+
+.frame .input-box input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    background: transparent;
+}
+
+.frame .edit-btn {
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    background: #000;
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: "Anton", serif;
+    font-weight: 500;
+    font-style: normal;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.frame .edit-btn:hover {
+    background: gold;
+    color: #000;
+}
+
+.flex-two .profile {
+    width: 70%;
+    height: 70%;
+    border-radius: 30rem;
+    overflow: hidden; 
+    background: #fff;
+}
+
+.flex-two .profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex-two .post {
+    position: absolute;
+    display: inline-block;
+    bottom: 4rem;
+}
+
+.flex-two .post input[type="file"] {
+    display: none; 
+}
+
+.flex-two .post label {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    background: #000;
+    border: none;
+    box-shadow: 0 5px 10px #ddd;
+    border-radius: 30rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-two .post label:hover {
+    background: #fff;
+    color: #000;
+}
+
+.flex-two .post input:focus + label {
+    outline: 2px solid #ffbf00;
+}
+
+.flex-two .post label ion-icon {
+    font-size: 1.5rem;
+    color: red;
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper .flex, .wrapper .flex-two {
+        width: 100%;
+    }
+}

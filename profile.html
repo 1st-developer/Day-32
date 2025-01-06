@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./profileControllers/profile.css">
+    <script src="./profileControllers/profile.js" defer></script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="flex">
+            <div class="frame">
+                <form action="#">
+                    <h2>Edit Profile ✨</h2>
+                    <div class="edit">
+                        <div class="image">
+                            <img src="./profileControllers/img/avatar.png">
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Username" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Location" required>
+                    </div>
+                    <button type="submit" class="edit-btn">Finished</button>
+                </form>
+            </div>
+        </div>
+        <div class="flex-two">
+            <div class="post">
+                <input type="file" id="file-input" accept="image/*">
+                <label for="file-input"><ion-icon name="cloud-upload-outline"></ion-icon>  Upload File</label>
+            </div>
+            <div class="profile" id="post">
+                <img src="img/profile.png">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
