@@ -6,6 +6,10 @@
     font-family: sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .wrapper {
     width: 100%;
     display: flex;
